@@ -61,7 +61,7 @@ addThought(req, res) {
         .then((thought) => 
             !thought
             ? res.status(404).json({ message : 'No THOUGHT'})
-            : res.json({'thought deleted'})
+            : res.json({ message: 'thought deleted'})
             )
 
             .catch((err) => res.status(500).json(err));

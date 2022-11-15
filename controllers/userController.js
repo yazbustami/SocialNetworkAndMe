@@ -50,7 +50,7 @@ deleteUser(req, res) {
     .then((user) =>
     !user
     ? res.status(404).json({ message : 'no id match'})
-    : res.json({'user deleted'}))
+    : res.json({ message: 'user deleted'}))
 
     .catch((err) => res.status(500).json(err));
 },
