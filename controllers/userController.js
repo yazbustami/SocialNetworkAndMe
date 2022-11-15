@@ -1,6 +1,6 @@
 const User = require('../models/User');
 
-module.exports = {
+const userController = {
     getUsers(req, res) {
         User.find()
         .then ((users) => res.json(users))
@@ -89,3 +89,5 @@ deleteFriend(req, res) {
         }); 
 },
 }
+
+module.exports = userController;
