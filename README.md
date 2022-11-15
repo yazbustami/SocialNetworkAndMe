@@ -1,1 +1,2 @@
 # SocialNetworkAndMe
+## STARTER CODE WAS PROVIDED
